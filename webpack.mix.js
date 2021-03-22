@@ -1,5 +1,7 @@
 const mix = require('laravel-mix');
 const browserSync = require('browser-sync');
+require('laravel-mix-artisan-serve');
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -24,4 +26,5 @@ mix.js('resources/js/app.js', 'public/js')
             'public/**/*'
         ],
         proxy: 'http://127.0.0.1:8000',
-    });
+    })
+    .serve();
