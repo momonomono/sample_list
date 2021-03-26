@@ -1,0 +1,56 @@
+.c-header{
+    display:flex;
+    align-items: center;
+    text-align:center;
+    background:none;
+    position:relative;
+    
+    &__logo{
+        height:100%;
+        background:none;
+        position:absolute;
+        left:0;
+    }
+
+    &__nav{
+        display:flex;
+        position:absolute;
+        right:0;
+        background:none;
+    }
+
+    &__item{
+        height:60px;
+        line-height:60px;
+        background:none;
+        width:100px;
+        position:relative;
+        margin-right:30px;
+        transition: color 0.5s,font-weight 1s;
+
+        &:last-child{
+            margin:0;
+        }
+
+        &::after{
+            content: "";
+            width:30px;
+            height:2px;
+            background:#0f0f0f;
+            position:absolute;
+            bottom:10px;
+            right:calc(50% - 15px );
+            transition: background 0.2s;
+        }
+
+        &:hover{
+            color:orange;
+            font-weight: 700;
+            animation:iconMove 1s infinite normal;
+
+            &:after{
+                background:orange;
+            }
+        }
+    }
+}

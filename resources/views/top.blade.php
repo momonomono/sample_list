@@ -3,7 +3,8 @@
 @section('title',"TOP")
 
 @section('body')
-    <div class="top">
-        
-    </div>
+    <!-- <div id="app">
+        <top-component></top-component>
+    </div> -->
+    <top-component></top-component>
 @endsection

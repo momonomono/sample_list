@@ -1,6 +1,9 @@
-@import "reset";
+@import "foundation/**";
+
+@import "layout/**";
+
+@import "object/component/**";
+@import "object/project/**";
+@import "object/utility/**";
 
 
-*{
-    background:#f0f0f0;
-}

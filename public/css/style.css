@@ -1,3 +1,55 @@
+@-webkit-keyframes iconMove {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-15deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  60% {
+    transform: rotate(-15deg);
+  }
+
+  70% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes iconMove {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-15deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  60% {
+    transform: rotate(-15deg);
+  }
+
+  70% {
+    transform: rotate(0deg);
+  }
+}
+
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
 /* Reset box-model and set borders */
@@ -527,26 +579,76 @@ template {
   display: none;
 }
 
-.top {
+.l-header {
+  width: 100%;
+  position: fixed;
+}
+
+.c-header {
+  display: flex;
+  align-items: center;
   text-align: center;
+  background: none;
+  position: relative;
 }
 
-.top__title {
-  font-size: 50px;
-  margin: 40px 0;
+.c-header__logo {
+  height: 100%;
+  background: none;
+  position: absolute;
+  left: 0;
 }
 
-.top__list {
-  margin-top: 100px;
+.c-header__nav {
+  display: flex;
+  position: absolute;
+  right: 0;
+  background: none;
 }
 
-.top__item {
-  list-style: none;
-  font-size: 20px;
-  margin-top: 30px;
+.c-header__item {
+  height: 60px;
+  line-height: 60px;
+  background: none;
+  width: 100px;
+  position: relative;
+  margin-right: 30px;
+  transition: color 0.5s, font-weight 1s;
 }
 
-* {
-  background: #f0f0f0;
+.c-header__item:last-child {
+  margin: 0;
+}
+
+.c-header__item::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #0f0f0f;
+  position: absolute;
+  bottom: 10px;
+  right: calc(50% - 15px );
+  transition: background 0.2s;
+}
+
+.c-header__item:hover {
+  color: orange;
+  font-weight: 700;
+  -webkit-animation: iconMove 1s infinite normal;
+          animation: iconMove 1s infinite normal;
+}
+
+.c-header__item:hover:after {
+  background: orange;
+}
+
+.p-header {
+  width: 80%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.u-bg__header {
+  background: #fff0d4;
 }
 

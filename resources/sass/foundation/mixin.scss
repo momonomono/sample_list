@@ -1,0 +1,25 @@
+@keyframes iconMove {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    30%{
+        transform: rotate(15deg);
+    }
+
+    40%{
+        transform: rotate(-15deg);
+    }
+
+    50%{
+        transform: rotate(15deg);
+    }
+
+    60%{
+        transform: rotate(-15deg);
+    }
+
+    70%{
+        transform: rotate(0deg);
+    }
+}
