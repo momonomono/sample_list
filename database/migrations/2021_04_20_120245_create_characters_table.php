@@ -15,15 +15,15 @@ class CreateCharactersTable extends Migration
     {
         Schema::create('characters', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text('name');
+            $table->string('name');
             $table->integer('speed');
             $table->integer('stamina');
             $table->integer('power');
             $table->integer('guts');
             $table->integer('wises');
-            $table->text('approprite_baba');
-            $table->text('approprite_distance');
-            $table->text('approprite_leg_quality');
+            $table->string('approprite_baba');
+            $table->string('approprite_distance');
+            $table->string('approprite_leg_quality');
             $table->timestamps();
         });
     }

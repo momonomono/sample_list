@@ -8,6 +8,6 @@ class MainController extends Controller
 {
     public function top(){
         
-        return view('top');
+        return view('uma.top');
     }
 }
