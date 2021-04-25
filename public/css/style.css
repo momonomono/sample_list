@@ -1,26 +1,3 @@
-.top {
-  text-align: center;
-}
-
-.top__title {
-  font-size: 50px;
-  margin: 40px 0;
-}
-
-.top__list {
-  margin-top: 100px;
-}
-
-.top__item {
-  list-style: none;
-  font-size: 20px;
-  margin-top: 30px;
-}
-
-* {
-  background: #f0f0f0;
-}
-
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
 /* Reset box-model and set borders */
@@ -550,22 +527,173 @@ template {
   display: none;
 }
 
-.top {
+.l-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.c-top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.c-top__detail {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.5s;
+  z-index: 1;
+}
+
+.c-top__detail-hide {
+  background-color: rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.p-top {
+  width: 100%;
+  height: 600px;
+  background: #9f9f9f;
+}
+
+.p-top__container {
+  background: #f0f0f0;
+  width: calc(20% - 10px);
+  margin: 10px 0 10px 10px;
+  box-sizing: border-box;
   text-align: center;
 }
 
-.top__title {
-  font-size: 50px;
-  margin: 40px 0;
+.p-top__container:last-child {
+  margin: 10px;
 }
 
-.top__list {
+.p-top__title {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.p-top__imageBox {
+  display: flex;
+  height: 70%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p-top__icon {
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+  background: red;
+  margin: 0 auto;
+}
+
+.p-top__detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.p-top__detail-test {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.p-top__artboard {
+  width: 80%;
+  margin: 100px auto;
+  padding: 50px 0;
+  background: white;
+  text-align: center;
+}
+
+.p-top__button {
+  width: 100px;
+  height: 30px;
+  background: #ff6600;
+}
+
+.u-mt10 {
+  margin-top: 10px;
+}
+
+.u-mb10 {
+  margin-bottom: 10px;
+}
+
+.u-mt20 {
+  margin-top: 20px;
+}
+
+.u-mb20 {
+  margin-bottom: 20px;
+}
+
+.u-mt30 {
+  margin-top: 30px;
+}
+
+.u-mb30 {
+  margin-bottom: 30px;
+}
+
+.u-mt40 {
+  margin-top: 40px;
+}
+
+.u-mb40 {
+  margin-bottom: 40px;
+}
+
+.u-mt50 {
+  margin-top: 50px;
+}
+
+.u-mb50 {
+  margin-bottom: 50px;
+}
+
+.u-mt60 {
+  margin-top: 60px;
+}
+
+.u-mb60 {
+  margin-bottom: 60px;
+}
+
+.u-mt70 {
+  margin-top: 70px;
+}
+
+.u-mb70 {
+  margin-bottom: 70px;
+}
+
+.u-mt80 {
+  margin-top: 80px;
+}
+
+.u-mb80 {
+  margin-bottom: 80px;
+}
+
+.u-mt90 {
+  margin-top: 90px;
+}
+
+.u-mb90 {
+  margin-bottom: 90px;
+}
+
+.u-mt100 {
   margin-top: 100px;
 }
 
-.top__item {
-  list-style: none;
-  font-size: 20px;
-  margin-top: 30px;
+.u-mb100 {
+  margin-bottom: 100px;
 }
 

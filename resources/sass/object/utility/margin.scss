@@ -1,0 +1,4 @@
+@for $i from 1 through 10{
+    .u-mt#{$i * 10}{margin-top:$i*10px;}
+    .u-mb#{$i * 10}{margin-bottom:$i*10px;}
+}

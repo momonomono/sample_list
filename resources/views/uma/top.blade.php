@@ -4,6 +4,6 @@
 
 @section('body')
     <div id="app">
-        <top-component></top-component>
+        <top-component image=""></top-component>
     </div>
 @endsection
