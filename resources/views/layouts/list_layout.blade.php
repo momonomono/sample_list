@@ -7,9 +7,7 @@
     <title>Sample List | @yield('title')</title>
 </head>
 <body>
-    <div id="app">
-        @yield('body')
-        <script src={{ asset('js/main.js') }}></script>
-    </div>
+    @yield('body')
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

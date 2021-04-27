@@ -1,0 +1,15 @@
+.c-top{
+    display:flex;
+    justify-content: space-around;
+
+    &__detail{
+        background-color:rgba(0,0,0,0.5);
+        transition:background-color 0.5s;
+        z-index:1;
+
+        &-hide{
+            background-color:rgba(0,0,0,0);
+            z-index:-1;
+        }
+    }
+}

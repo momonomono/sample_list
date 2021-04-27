@@ -1,6 +1,7 @@
-@import "foundation/reset.scss";
+@import "foundation/**";
 
+@import "layouts/**";
 
-*{
-    background:#f0f0f0;
-}
+@import "object/components/**";
+@import "object/project/**";
+@import "object/utility/**";
