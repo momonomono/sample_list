@@ -16,6 +16,8 @@ class CreateCoursesTable extends Migration
         Schema::create('courses', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('character_ability_id');
+            $table->integer('grass')->default(8);
+            $table->integer('dirt')->default(8);
             $table->timestamps();
         });
     }

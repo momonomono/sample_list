@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDistanceAptitudesTable extends Migration
+class CreateDistancesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,13 @@ class CreateDistanceAptitudesTable extends Migration
      */
     public function up()
     {
-        Schema::create('distance_aptitudes', function (Blueprint $table) {
+        Schema::create('distances', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('character_ability_id');
+            $table->integer('short')->default(8);
+            $table->integer('mile')->default(8);
+            $table->integer('medium')->default(8);
+            $table->integer('long')->default(8);
             $table->timestamps();
         });
     }
@@ -27,6 +31,6 @@ class CreateDistanceAptitudesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('distance_aptitudes');
+        Schema::dropIfExists('distances');
     }
 }
