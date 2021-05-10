@@ -17,7 +17,7 @@ class CreateTypesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('character_ability_id');
             $table->integer('nige');
-            $table->integer('senkoou');
+            $table->integer('senkou');
             $table->integer('sasi');
             $table->integer('oikomi');
             $table->timestamps();

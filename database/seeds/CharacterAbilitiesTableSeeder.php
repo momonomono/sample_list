@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Carbon\Carbon;
 
-class CharactersTableSeeder extends Seeder
+class CharacterAbilitiesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,12 +13,11 @@ class CharactersTableSeeder extends Seeder
     public function run()
     {
         $param = [
-            'name' => 'トウカイテイオー',
-            'image' => 'img/tokaiteio.jpg',
+            'character_id' => 1,
             'updated_at' => Carbon::now(),
             'created_at' => Carbon::now()
         ];
 
-        DB::table('characters')->updateOrInsert($param);
+        Db::table('character_abilities')->updateOrInsert($param);
     }
 }
