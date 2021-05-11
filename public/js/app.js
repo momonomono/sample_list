@@ -19366,17 +19366,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "./resources/sass/style.scss":
 /*!***********************************!*\
   !*** ./resources/sass/style.scss ***!
@@ -19395,9 +19384,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\sample_list\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\xampp\htdocs\sample_list\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\sample_list\resources\sass\style.scss */"./resources/sass/style.scss");
+__webpack_require__(/*! C:\Users\WAKAO\Desktop\sample_list\resources\js\app.js */"./resources/js/app.js");
+!(function webpackMissingModule() { var e = new Error("Cannot find module 'C:\\Users\\WAKAO\\Desktop\\sample_list\\resources\\sass\\app.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+module.exports = __webpack_require__(/*! C:\Users\WAKAO\Desktop\sample_list\resources\sass\style.scss */"./resources/sass/style.scss");
 
 
 /***/ })
