@@ -3,7 +3,7 @@
 @section('title',"Login")
 
 @section('body')
-    <div class="">
-        
+    <div class="l-container">
+        Hello
     </div>
 @endsection
