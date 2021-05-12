@@ -15,7 +15,11 @@ class CreateLeagueResultsTable extends Migration
     {
         Schema::create('league_results', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->
+            $table->integer('league_id');
+            $table->integer('winner_user_id');
+            $table->integer('loser_user_id');
+            $table->integer('winner_point');
+            $table->integer('loser_point');
             $table->timestamps();
         });
     }
