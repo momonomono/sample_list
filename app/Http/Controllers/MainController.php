@@ -15,4 +15,10 @@ class MainController extends Controller
 
         return view('login');
     }
+
+    public function postLogin(){
+
+        
+        return view('login');
+    }
 }

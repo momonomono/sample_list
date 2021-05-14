@@ -1,6 +1,4 @@
 const mix = require('laravel-mix');
-const browserSync = require('browser-sync');
-require('laravel-mix-artisan-serve');
 
 /*
  |--------------------------------------------------------------------------
@@ -13,27 +11,5 @@ require('laravel-mix-artisan-serve');
  |
  */
 
-mix.webpackConfig({
-        module:{
-            rules:[{
-                test: /\.scss/,
-                enforce: "pre",
-                loader: 'import-glob-loader'
-            }]
-        }
-    })
-    .js('resources/js/app.js', 'public/js')
-    .js('resources/js/main.js', 'public/js')
-    .sass('resources/sass/style.scss', 'public/css')
-    .browserSync({
-        files: [
-            'resources/**/*',
-            'app/**/*',
-            'config/**/*',
-            'routes/**/*',
-            'public/**/*'
-        ],
-        proxy: 'http://127.0.0.1:8000',
-        browser:"chrome.exe"
-    })
-    .serve();
+mix.js('resources/js/app.js', 'public/js')
+   .sass('resources/sass/app.scss', 'public/css');

@@ -1,5 +1,12 @@
 @import "foundation/reset.scss";
+@import "foundation/variable.scss";
+@import "foundation/mixin.scss";
+
 @import "layout/**";
+
+@import "object/project/**";
+@import "object/component/**";
+
 
 *{
     background:#f0f0f0;

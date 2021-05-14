@@ -1,0 +1,33 @@
+.p-form{
+    width:50%;
+    margin:100px auto;
+
+    @include mq(){
+        width:95%;
+    }
+
+    &__title{
+        font-size:50px;
+        display:block;
+    }
+
+    &__label{
+        display:block;
+        margin-top:30px;
+    }
+
+    &__inputBox{
+        margin-top:5px;
+        height:28px;
+        width:100%;
+        border:solid 1px rgba(0,0,0,0.5);
+        padding-left:10px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        box-shadow: inset 1px 4px 4px -4px rgba(0,0,0,0.3);
+    }
+
+    &__button{
+        border-radius: 4px;
+    }
+}
